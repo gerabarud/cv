@@ -6,9 +6,9 @@
 
 ## 🎯 Sobre mí
 
-Soy un especialista en **infraestructura cloud-native** con **12+ años de experiencia** en administración de sistemas, automatización y operabilidad. Actualmente trabajo como **SRE en el SIU** (Sistema de Información Universitaria), donde diseño y mantengo clústeres Kubernetes productivos que sirven a universidades de toda Argentina.
+Profesional con más de **12 años de experiencia** en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Soy especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS). Actualmente me desempeño como **SRE en el SIU** (Sistema de Información Universitaria), enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones.
 
-Mi enfoque es crear **infraestructura confiable, segura y escalable** que permita que los equipos se concentren en la innovación, no en resolver problemas operacionales.
+Mi objetivo es crear **infraestructura confiable, segura y escalable** que permita a los equipos concentrarse en la innovación, no en resolver problemas operacionales.
 
 ---
 
@@ -19,16 +19,19 @@ Mi enfoque es crear **infraestructura confiable, segura y escalable** que permit
 - Automatización de despliegues con GitOps (Argo CD)
 - Seguridad en profundidad: RBAC, políticas de admisión, validación de políticas
 
-### 📦 Infraestructura de Almacenamiento
-- Almacenamiento distribuido con **Longhorn** (réplicas, snapshots, backups)
-- Object storage con **MinIO** para documentos y backups
+### 📦 Almacenamiento y Persistencia
+- Almacenamiento distribuido con **Longhorn** (snapshots, backups, replicación)
+- Object storage con **MinIO** (S3-compatible) para documentos y backups
+- NFS para almacenamiento compartido
 - Disaster recovery completo con **Velero**
-- Bases de datos PostgreSQL cloud-native con **CNPG** (HA automático)
+- Bases de datos **PostgreSQL** cloud-native con **CNPG** (HA automático, backup y recovery)
 
 ### 🔒 Seguridad y Secretos
 - Gestión centralizada de secretos con **Vault** y rotación automática
-- Monitoreo de seguridad runtime con **Falco**
-- Validación de políticas de admisión
+- Vault Operator para automatización
+- RBAC avanzado
+- Validating Admission Policies (ValidationAdmissionPolicy)
+- ModSecurity para WAF
 
 ### 📊 Observabilidad
 - Métricas con **Prometheus**
@@ -36,10 +39,10 @@ Mi enfoque es crear **infraestructura confiable, segura y escalable** que permit
 - Dashboards avanzados en **Grafana**
 - Alertas inteligentes e información accionable
 
-### ⚙️ Automatización
-- Infrastructure as Code con **Terraform** y **Ansible**
-- CI/CD optimization en **GitLab**
-- Virtualizacion con **Proxmox** y orquestación de clústeres
+### 🔌 Control de Versiones y CI/CD
+- **Git, GitHub, GitLab** – administración y workflows colaborativos
+- **GitLab CI/CD** – administración de runners, variables, webhooks, pipelines, jobs, stages, artifacts
+- **Argo CD** – GitOps para despliegues automáticos
 
 ---
 
@@ -47,40 +50,57 @@ Mi enfoque es crear **infraestructura confiable, segura y escalable** que permit
 
 **Sistema de Información Universitaria (SIU)** — *Agosto 2022 – Presente*
 
-- Dirijo la infraestructura Kubernetes que soporta servicios críticos para universidades nacionales
-- Implementé el ecosistema completo de almacenamiento distribuido, observabilidad y seguridad
-- Dicto charlas y capacitaciones sobre Kubernetes en eventos anuales del SIU
-- Co-diseñé el curso oficial de Kubernetes para universidades (RIU)
+- Diseño, creación y administración de clústeres Kubernetes productivos multi-ambiente (on-premise y AWS EKS)
+- Administración de infraestructura completa: almacenamiento distribuido, observabilidad, seguridad, GitOps
+- Almacenamiento con Longhorn, MinIO, disaster recovery con Velero
+- Gestión de secretos centralizada con Vault y rotación automática
+- Bases de datos cloud-native con CNPG (PostgreSQL HA)
+- Observabilidad completa: Prometheus, Loki, Grafana, alertas inteligentes
+- Docencia: charlas en eventos anuales del SIU y co-diseño del curso "Kubernetes Productivo" (RIU)
 
 **Universidad Nacional de San Juan** — *Agosto 2017 – Presente*
 
 - Administración de servidores Linux y servicios institucionales
-- Soporte técnico y continuidad operacional
+- Migración progresiva de aplicaciones hacia contenedores y Kubernetes
+- Mantenimiento de servicios web, bases de datos y sistemas críticos
 
 ---
 
 ## 🎓 Docencia y Comunidad
 
-- 📚 Instructor de cursos Kubernetes para universidades nacionales (RIU - 32 horas)
-- 🎤 Disertante en conferencias profesionales del SIU
+- 📚 **Instructor** – "Kubernetes productivo: Despliegue y Administración" para universidades nacionales (RIU - 32 horas, ediciones 2023 y 2025)
+- 🎤 **Disertante** en eventos anuales del SIU:
+  - *Seguridad en Kubernetes* (2024)
+  - *Charlas de café: Kubernetes – Experiencias y Recomendaciones* (2025)
 - 📖 Autor de documentación técnica de infraestructura
-- 👥 Mentor técnico en temas de DevOps y SRE
 
 ---
 
 ## 🛠️ Stack Tecnológico
 
 **Kubernetes & Cloud-Native**  
-Kubernetes (kubeadm, CAPI, EKS) • Calico • Ingress Nginx • MetalLB • Longhorn • MinIO • Velero • Vault • Falco • CNPG • Prometheus • Grafana • Loki • Argo CD
+Kubernetes (kubeadm, EKS) • Containerd • Docker • Helm • Kustomize • Calico • Ingress Nginx • MetalLB • Capsule • kube-vip • cert-manager
 
-**Infraestructura**  
-Linux (Debian/Ubuntu) • Proxmox VE • containerd • Docker • Terraform • Ansible • Salt
+**Almacenamiento & Persistencia**  
+Longhorn • MinIO • Velero • NFS • etcd management
 
-**CI/CD & DevOps**  
-GitLab • GitHub Actions • Argo CD • GitOps • Runners y pipelines
+**Bases de Datos**  
+PostgreSQL • CNPG (CloudNativePG)
 
-**Networking**  
-Calico • Ingress Nginx • kube-vip • MetalLB • cert-manager
+**Seguridad**  
+Vault • Vault Operator • RBAC avanzado • ValidationAdmissionPolicy • ModSecurity
+
+**Observabilidad**  
+Prometheus • Alertmanager • Grafana • Loki • Promtail • kube-state-metrics • node-exporter
+
+**Infraestructura & IaC**  
+Linux (Debian/Ubuntu) • Proxmox VE • Terraform • Ansible • Salt
+
+**Control de Versiones & CI/CD**  
+Git • GitHub • GitLab (administración, runners, CI/CD) • Argo CD • GitOps
+
+**Automatización**  
+Bash • Python • Ansible playbooks • Terraform
 
 **Idiomas**  
 Español (nativo) • Inglés (avanzado)
@@ -104,6 +124,3 @@ Disponible en múltiples formatos:
 - 📧 **Email**: gabarud@gmail.com
 - 🏠 **Ubicación**: San Juan, Argentina
 
----
-
-*La infraestructura debe ser invisible. Cuando funciona correctamente, nadie la nota. Mi trabajo es que sea así.*
