@@ -22,6 +22,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        persist-credentials: true
     
     - name: Set up Python 3.10
       uses: actions/setup-python@v4
@@ -37,12 +38,16 @@ jobs:
         python3 generate_cv_pdf.py BOTH
     
     - name: Commit and push PDFs
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-        commit_message: 'Auto-generated CV PDFs'
-        force: false
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add pdfs/
+        if ! git diff --quiet && ! git diff --staged --quiet; then
+          git commit -m "Auto-generated CV PDFs"
+          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        else
+          echo "No changes to commit"
+        fi
 
     - name: Create Release
       if: success()
