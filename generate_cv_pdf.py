@@ -22,22 +22,8 @@ SECONDARY_COLOR = HexColor("#2c5282")    # Medium blue
 TEXT_COLOR = HexColor("#333333")         # Dark gray
 
 
-def convert_emojis_to_ascii(text: str) -> str:
-    """Convert emojis to ASCII equivalents for PDF compatibility"""
-    emoji_map = {
-        '📍': '[Location]',
-        '📧': '[Email]',
-        '🔗': '[Link]',
-    }
-    for emoji, replacement in emoji_map.items():
-        text = text.replace(emoji, replacement)
-    return text
-
 def format_inline(text: str) -> str:
     """Lightweight markdown inline formatting for bold/italic/links."""
-    # Convert emojis first
-    text = convert_emojis_to_ascii(text)
-    
     # Links [text](url)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
     # Bold **text**
@@ -353,8 +339,8 @@ def create_pdf(md_file, language="ES"):
 
         elif elem_type == 'text':
             if any(x in raw_text for x in ['📍', '📧', '🔗', '@']):
-                # Keep emojis and format the text as-is
-                content_elements.append(Paragraph(format_inline(raw_text), contact_style))
+                clean = raw_text.replace('📍', '').replace('📧', '').replace('🔗', '').strip()
+                content_elements.append(Paragraph(format_inline(clean), contact_style))
             else:
                 # For the first descriptive block, keep a small spacer
                 if not first_block_done:
