@@ -9,7 +9,7 @@
 
 ## PERFIL PROFESIONAL
 
-Profesional con más de **12 años de experiencia** en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS) y en la operación de servicios críticos. Me desempeño como **SRE**, enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones, incluyendo bases de datos y estrategias HA/backup.
+Profesional con más de **10 años de experiencia** en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS) y en la operación de servicios críticos. Me desempeño como **SRE**, enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones, incluyendo bases de datos y estrategias HA/backup.
 
 ---
 
