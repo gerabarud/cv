@@ -339,8 +339,8 @@ def create_pdf(md_file, language="ES"):
 
         elif elem_type == 'text':
             if any(x in raw_text for x in ['📍', '📧', '🔗', '@']):
-                clean = raw_text.replace('📍', '').replace('📧', '').replace('🔗', '').strip()
-                content_elements.append(Paragraph(format_inline(clean), contact_style))
+                # Keep emojis and format the text as-is
+                content_elements.append(Paragraph(format_inline(raw_text), contact_style))
             else:
                 # For the first descriptive block, keep a small spacer
                 if not first_block_done:
