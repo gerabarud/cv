@@ -5,65 +5,63 @@ on:
     branches:
       - main
     paths:
-      - 'CV_Gerardo_Barud_*.md'
-      - 'generate_cv_odt.py'
+      - 'CV_Gerardo_Barud_ES.md'
+      - 'generate_cv_pdf.py'
       - '.github/workflows/generate-cv.yml'
   workflow_dispatch:
 
 jobs:
-  generate-cv:
+  generate:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Set up Python
+    - name: Set up Python 3.10
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
     
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install odfpy
+        pip install reportlab
     
-    - name: Generate CV ODT files
+    - name: Generate CV PDFs
       run: |
-        python generate_cv_odt.py BOTH
+        python3 generate_cv_pdf.py BOTH
     
-    - name: Commit and push generated files
+    - name: Commit and push PDFs
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add CV_Gerardo_Barud_*.odt
-        git commit -m "🤖 Auto-generated CV files from markdown" || echo "No changes to commit"
-        git push
+        git add pdfs/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generated CV PDFs" && git push)
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Release
-      if: github.ref == 'refs/heads/main'
+      if: success()
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: cv-${{ github.run_number }}
-        release_name: CV Release ${{ github.run_number }}
+        release_name: CV PDFs - Build ${{ github.run_number }}
         body: |
-          Auto-generated CV files:
-          - CV_Gerardo_Barud_ES.odt (Español)
-          - CV_Gerardo_Barud_EN.odt (English)
+          Auto-generated CV PDFs from Markdown source:
+          - CV_Gerardo_Barud_ES.pdf (Español)
+          - CV_Gerardo_Barud_EN.pdf (Inglés)
         draft: false
         prerelease: false
 
     - name: Upload Release Assets
-      if: github.ref == 'refs/heads/main'
+      if: success()
       uses: softprops/action-gh-release@v1
       with:
         tag_name: cv-${{ github.run_number }}
         files: |
-          CV_Gerardo_Barud_ES.odt
-          CV_Gerardo_Barud_EN.odt
+          pdfs/CV_Gerardo_Barud_ES.pdf
+          pdfs/CV_Gerardo_Barud_EN.pdf
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

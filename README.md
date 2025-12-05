@@ -1,216 +1,109 @@
-# 👋 Welcome! | ¡Bienvenido!
+# 👋 Gerardo Barud
 
-This repository contains my professional CV (Curriculum Vitae) with automated generation of multiple formats.
+**SysAdmin / SRE – Especialista en Kubernetes**
 
 ---
 
-## 📄 My CV
+## 🎯 Sobre mí
 
-### Spanish Version | Versión en Español
+Soy un especialista en **infraestructura cloud-native** con **12+ años de experiencia** en administración de sistemas, automatización y operabilidad. Actualmente trabajo como **SRE en el SIU** (Sistema de Información Universitaria), donde diseño y mantengo clústeres Kubernetes productivos que sirven a universidades de toda Argentina.
+
+Mi enfoque es crear **infraestructura confiable, segura y escalable** que permita que los equipos se concentren en la innovación, no en resolver problemas operacionales.
+
+---
+
+## 💡 Lo que hago
+
+### ☸️ Orquestación de Contenedores
+- Diseño y administración de clústeres Kubernetes multi-ambiente (on-premise y AWS EKS)
+- Automatización de despliegues con GitOps (Argo CD)
+- Seguridad en profundidad: RBAC, políticas de admisión, validación de políticas
+
+### 📦 Infraestructura de Almacenamiento
+- Almacenamiento distribuido con **Longhorn** (réplicas, snapshots, backups)
+- Object storage con **MinIO** para documentos y backups
+- Disaster recovery completo con **Velero**
+- Bases de datos PostgreSQL cloud-native con **CNPG** (HA automático)
+
+### 🔒 Seguridad y Secretos
+- Gestión centralizada de secretos con **Vault** y rotación automática
+- Monitoreo de seguridad runtime con **Falco**
+- Validación de políticas de admisión
+
+### 📊 Observabilidad
+- Métricas con **Prometheus**
+- Logs centralizados con **Loki/Promtail**
+- Dashboards avanzados en **Grafana**
+- Alertas inteligentes e información accionable
+
+### ⚙️ Automatización
+- Infrastructure as Code con **Terraform** y **Ansible**
+- CI/CD optimization en **GitLab**
+- Virtualizacion con **Proxmox** y orquestación de clústeres
+
+---
+
+## 🏆 Experiencia Destacada
+
+**Sistema de Información Universitaria (SIU)** — *Agosto 2022 – Presente*
+
+- Dirijo la infraestructura Kubernetes que soporta servicios críticos para universidades nacionales
+- Implementé el ecosistema completo de almacenamiento distribuido, observabilidad y seguridad
+- Dicto charlas y capacitaciones sobre Kubernetes en eventos anuales del SIU
+- Co-diseñé el curso oficial de Kubernetes para universidades (RIU)
+
+**Universidad Nacional de San Juan** — *Agosto 2017 – Presente*
+
+- Administración de servidores Linux y servicios institucionales
+- Soporte técnico y continuidad operacional
+
+---
+
+## 🎓 Docencia y Comunidad
+
+- 📚 Instructor de cursos Kubernetes para universidades nacionales (RIU - 32 horas)
+- 🎤 Disertante en conferencias profesionales del SIU
+- 📖 Autor de documentación técnica de infraestructura
+- 👥 Mentor técnico en temas de DevOps y SRE
+
+---
+
+## 🛠️ Stack Tecnológico
+
+**Kubernetes & Cloud-Native**  
+Kubernetes (kubeadm, CAPI, EKS) • Calico • Ingress Nginx • MetalLB • Longhorn • MinIO • Velero • Vault • Falco • CNPG • Prometheus • Grafana • Loki • Argo CD
+
+**Infraestructura**  
+Linux (Debian/Ubuntu) • Proxmox VE • containerd • Docker • Terraform • Ansible • Salt
+
+**CI/CD & DevOps**  
+GitLab • GitHub Actions • Argo CD • GitOps • Runners y pipelines
+
+**Networking**  
+Calico • Ingress Nginx • kube-vip • MetalLB • cert-manager
+
+**Idiomas**  
+Español (nativo) • Inglés (avanzado)
+
+---
+
+## 📄 Mi CV
+
+Disponible en múltiples formatos:
+
+- **PDF en Español**: [CV_Gerardo_Barud_ES.pdf](./pdfs/CV_Gerardo_Barud_ES.pdf)
+- **PDF en Inglés**: [CV_Gerardo_Barud_EN.pdf](./pdfs/CV_Gerardo_Barud_EN.pdf)
 - **Markdown**: [CV_Gerardo_Barud_ES.md](./CV_Gerardo_Barud_ES.md)
-- **LibreOffice**: [CV_Gerardo_Barud_ES.odt](./CV_Gerardo_Barud_ES.odt)
-
-### English Version | Versión en Inglés
-- **Markdown**: [CV_Gerardo_Barud_EN.md](./CV_Gerardo_Barud_EN.md)
-- **LibreOffice**: [CV_Gerardo_Barud_EN.odt](./CV_Gerardo_Barud_EN.odt)
 
 ---
 
-## 🚀 About Me | Acerca de mí
+## 🌐 Conecta conmigo
 
-I am a **SysAdmin/SRE specialist** with **12+ years of experience** in:
-- 🐧 Linux Systems Administration
-- ☸️ Kubernetes & Container Orchestration
-- ☁️ Cloud Infrastructure (AWS, On-Premise)
-- 📊 Observability & Monitoring
-- 🔐 Security & Disaster Recovery
-
-**Soy un especialista SysAdmin/SRE con 12+ años de experiencia en:**
-- Administración de Sistemas Linux
-- Orquestación de Contenedores & Kubernetes
-- Infraestructura Cloud (AWS, On-Premise)
-- Observabilidad y Monitoreo
-- Seguridad y Disaster Recovery
+- 🔗 **GitHub**: [gerabarud](https://github.com/gerabarud)
+- 💼 **LinkedIn**: [gbarud](https://linkedin.com/in/gbarud)
+- 📧 **Email**: gabarud@gmail.com
+- 🏠 **Ubicación**: San Juan, Argentina
 
 ---
 
-## 🔧 Key Technologies | Tecnologías Clave
-
-### Kubernetes Ecosystem
-- **Orchestration**: kubeadm, CAPI, EKS
-- **Networking**: Calico, Ingress Nginx, MetalLB
-- **Storage**: Longhorn, MinIO, Velero
-- **Secrets**: Vault, Sealed Secrets
-- **Security**: RBAC, ValidationAdmissionPolicy, Falco
-- **Observability**: Prometheus, Grafana, Loki
-- **Databases**: CNPG (PostgreSQL), etcd
-
-### Infrastructure & Automation
-- **IaC**: Terraform, Ansible, Salt
-- **Virtualization**: Proxmox VE
-- **CI/CD**: GitLab (runners, pipelines)
-- **GitOps**: Argo CD
-
----
-
-## 🎓 Teaching & Community
-
-I actively contribute to the technical community through:
-- 📚 Teaching production Kubernetes courses for national universities (RIU)
-- 🎤 Speaking at professional workshops and conferences
-- 📖 Authoring infrastructure documentation
-- 👥 Mentoring and technical training
-
-Contribuyo activamente a la comunidad técnica mediante:
-- Impartiendo cursos de Kubernetes para universidades nacionales
-- Disertaciones en workshops y conferencias profesionales
-- Autoría de documentación de infraestructura
-- Mentoría y capacitación técnica
-
----
-
-## 📝 How to Use This Repository | Cómo usar este repositorio
-
-### Editing the CV | Editar el CV
-
-1. **Edit the Markdown files** | Editar los archivos Markdown:
-   - Spanish: `CV_Gerardo_Barud_ES.md`
-   - English: `CV_Gerardo_Barud_EN.md`
-
-2. **Commit and push** to the `main` branch
-
-3. **GitHub Actions will automatically**:
-   - Generate ODT files from the Markdown
-   - Commit the generated files
-   - Create a release with both formats
-
-### Running Locally | Ejecutar localmente
-
-Generate CV files locally:
-
-```bash
-# Install dependencies (one time)
-pip install odfpy
-
-# Generate both Spanish and English versions
-python3 generate_cv_odt.py BOTH
-
-# Or individual versions
-python3 generate_cv_odt.py ES   # Spanish only
-python3 generate_cv_odt.py EN   # English only
-```
-
----
-
-## 🤖 Automation | Automatización
-
-This repository uses **GitHub Actions** to automatically:
-
-1. ✅ Detect changes to MD files
-2. ✅ Generate ODT files using the Python script
-3. ✅ Commit generated files back to the repo
-4. ✅ Create releases with both format versions
-
-### Workflow File
-See [.github/workflows/generate-cv.yml](./.github/workflows/generate-cv.yml)
-
-**Step by step for CI/CD:**
-
-```
-You modify MD files
-        ↓
-Push to main branch
-        ↓
-GitHub Actions triggered
-        ↓
-Python script runs (generate_cv_odt.py)
-        ↓
-ODT files generated
-        ↓
-Files auto-committed & pushed
-        ↓
-Release created with both versions
-        ↓
-Ready to download from GitHub!
-```
-
----
-
-## 📥 Downloading Your CV | Descargar tu CV
-
-### Option 1: Direct from Repository | Opción 1: Directamente del repositorio
-- [CV_Gerardo_Barud_ES.odt](./CV_Gerardo_Barud_ES.odt) - Spanish version
-- [CV_Gerardo_Barud_EN.odt](./CV_Gerardo_Barud_EN.odt) - English version
-
-### Option 2: From Releases | Opción 2: Desde Releases
-Go to [Releases](../../releases) section to download all versions
-
-### Option 3: View as Markdown | Opción 3: Ver como Markdown
-- [Spanish MD](./CV_Gerardo_Barud_ES.md)
-- [English MD](./CV_Gerardo_Barud_EN.md)
-
----
-
-## 📧 Contact | Contacto
-
-- **Email**: gabarud@gmail.com
-- **GitHub**: [@gerabarud](https://github.com/gerabarud)
-- **LinkedIn**: [Gerardo Barud](https://linkedin.com/in/gbarud)
-
----
-
-## 📋 Structure | Estructura
-
-```
-cv/
-├── README.md                          # This file | Este archivo
-├── CV_Gerardo_Barud_ES.md            # Spanish markdown
-├── CV_Gerardo_Barud_EN.md            # English markdown
-├── CV_Gerardo_Barud_ES.odt           # Spanish LibreOffice (auto-generated)
-├── CV_Gerardo_Barud_EN.odt           # English LibreOffice (auto-generated)
-├── generate_cv_odt.py                # Python script to generate ODTs
-└── .github/
-    └── workflows/
-        └── generate-cv.yml           # GitHub Actions workflow
-```
-
----
-
-## 🔄 Workflow Summary | Resumen del Workflow
-
-| Step | Action | Automatic? |
-|------|--------|-----------|
-| 1 | Edit `.md` files | Manual ✍️ |
-| 2 | Commit & push | Manual ✍️ |
-| 3 | GitHub Actions runs | Automatic 🤖 |
-| 4 | Generate ODT files | Automatic 🤖 |
-| 5 | Commit generated files | Automatic 🤖 |
-| 6 | Create release | Automatic 🤖 |
-
----
-
-## 💡 Tips | Consejos
-
-1. **Always edit the MD files** - They are the source of truth
-   - *Siempre edita los MD* - Son la fuente de verdad
-
-2. **Commit messages are auto-generated** - No need to worry about them
-   - *Los mensajes de commit son auto-generados* - No necesitas preocuparte
-
-3. **ODT files are generated automatically** - Don't edit them manually
-   - *Los ODT se generan automáticamente* - No los edites manualmente
-
-4. **Both Spanish and English are always in sync**
-   - *Español e Inglés siempre están sincronizados*
-
----
-
-## 📜 License | Licencia
-
-This CV is provided as-is for personal use.
-
----
-
-**Last updated** | **Última actualización**: 2025-12-05
-
-Made with ❤️ | Hecho con ❤️
+*La infraestructura debe ser invisible. Cuando funciona correctamente, nadie la nota. Mi trabajo es que sea así.*
