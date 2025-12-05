@@ -6,7 +6,7 @@
 
 ## 🎯 Sobre mí
 
-Profesional con más de **12 años de experiencia** en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Soy especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS). Actualmente me desempeño como **SRE en el SIU** (Sistema de Información Universitaria), enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones.
+Profesional con más de **10 años de experiencia** en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Soy especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS). Actualmente me desempeño como **SRE en el SIU** (Sistema de Información Universitaria), enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones.
 
 Mi objetivo es crear **infraestructura confiable, segura y escalable** que permita a los equipos concentrarse en la innovación, no en resolver problemas operacionales.
 
