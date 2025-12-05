@@ -218,6 +218,9 @@ def parse_markdown(md_content):
 def create_pdf(md_file, language="ES"):
     """Create PDF from Markdown"""
     
+    # Ensure pdfs directory exists
+    os.makedirs("pdfs", exist_ok=True)
+    
     # Read markdown
     with open(md_file, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -231,7 +234,7 @@ def create_pdf(md_file, language="ES"):
     elements = parse_markdown(content)
     
     # Create PDF
-    pdf_file = f"/home/gbarud/cv/pdfs/CV_Gerardo_Barud_{language}.pdf"
+    pdf_file = f"pdfs/CV_Gerardo_Barud_{language}.pdf"
     doc = SimpleDocTemplate(
         pdf_file,
         pagesize=A4,
@@ -375,7 +378,7 @@ def main():
         sys.exit(1)
     
     option = sys.argv[1].upper()
-    md_file = "/home/gbarud/cv/CV_Gerardo_Barud_ES.md"
+    md_file = "CV_Gerardo_Barud_ES.md"
     
     if not os.path.exists(md_file):
         print(f"Error: {md_file} no encontrado")
