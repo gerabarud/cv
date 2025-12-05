@@ -11,6 +11,8 @@
 
 Profesional con más de **10 años de experiencia** enfocado en administración de sistemas Linux, infraestructura, virtualización, automatización y observabilidad. Especialista en **Kubernetes**, con experiencia en clústeres on-premise y cloud (EKS) y en la operación de servicios críticos. Me desempeño como **SysAdmin / SRE**, enfocándome en confiabilidad, seguridad, automatización, estandarización, disaster recovery y buenas prácticas en operaciones, incluyendo bases de datos y estrategias HA/backup.
 
+QUE PAZA
+
 ---
 
 ## HABILIDADES TÉCNICAS
