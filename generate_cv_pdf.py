@@ -338,8 +338,8 @@ def create_pdf(md_file, language="ES"):
             first_block_done = True
 
         elif elem_type == 'text':
-            if any(x in raw_text for x in ['📍', '📧', '🔗', '@']):
-                clean = raw_text.replace('📍', '').replace('📧', '').replace('🔗', '').strip()
+            if any(x in raw_text for x in ['📍', '📧', '🔗', '@', '📖']):
+                clean = raw_text.replace('📍', '').replace('📧', '').replace('🔗', '').replace('📖', '').strip()
                 content_elements.append(Paragraph(format_inline(clean), contact_style))
             else:
                 # For the first descriptive block, keep a small spacer

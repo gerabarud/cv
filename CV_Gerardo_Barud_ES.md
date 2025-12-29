@@ -3,7 +3,7 @@
 **SysAdmin / SRE – Especialista en Kubernetes**
 
 📍 San Juan, Argentina | 📧 gabarud@gmail.com  
-📖 Licenciado en Ciencias de la Computación
+Licenciado en Ciencias de la Computación
 🔗 [GitHub](https://github.com/gerabarud) | 🔗 [LinkedIn](https://linkedin.com/in/gbarud)
 
 
