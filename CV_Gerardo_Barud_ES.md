@@ -1,11 +1,16 @@
 # GERARDO BARUD
 
 **SysAdmin / SRE – Especialista en Kubernetes**
+Licenciado en Ciencias de la Computación
+[Correo](mailto:gabarud@gmail.com) | [GitHub](https://github.com/gerabarud) | 🔗 [LinkedIn](https://linkedin.com/in/gbarud) 
 
-📍 San Juan, Argentina | 📧 gabarud@gmail.com  
-📖 Licenciado en Ciencias de la Computación
-🔗 [GitHub](https://github.com/gerabarud) | 🔗 [LinkedIn](https://linkedin.com/in/gbarud)
+---
 
+## DATOS PERSONALES
+**Nombre Completo:** Gerardo Alberto BARUD
+**Dirección:** Cordillera de los Andes 2514, Santa Lucía, San Juan
+**Teléfono:** 2644708571
+**Correo:** gabarud@gmail.com
 
 ---
 
@@ -70,7 +75,7 @@ Prometheus, Alertmanager, Grafana (dashboards avanzados), Loki (log aggregation)
 - **Disertante** en eventos anuales del SIU:
   - *Charlas de café — Experiencias y Recomendaciones en Kubernetes - Taller SIU 2025*
   - *Seguridad en Kubernetes — Taller SIU 2024*
-- **Co-diseño** del curso *Kubernetes Productivo* dictado para universidades nacionales (RIU)
+- **Co-diseño** del curso *Kubernetes Productivo* dictado para universidades nacionales (ARIU)
 
 ---
 
@@ -112,11 +117,11 @@ Prometheus, Alertmanager, Grafana (dashboards avanzados), Loki (log aggregation)
 
 ## FORMACIÓN Y CURSOS DICTADOS
 
-### Docente – Curso para Universidades Nacionales (RIU)
+### Docente – Curso para Universidades Nacionales (ARIU)
 
 **"Kubernetes productivo: Despliegue y Administración"**
 
-- **Ediciones:** 2023 y 2025
+- **Ediciones:** 2023, 2025 y 2026
 - **Duración:** 32 horas (sincrónicas + asincrónicas)
 - **Rol:** Docente a cargo y coautor del contenido
 
@@ -132,6 +137,17 @@ Prometheus, Alertmanager, Grafana (dashboards avanzados), Loki (log aggregation)
 - PostgreSQL cloud-native con CNPG
 - Troubleshooting y best practices
 - Actualización de cluser y herramientas de infraestructura
+
+### Docente - Universidad Nacional de Quilmes
+
+**Docente de la asignatura Gestión de la Infraestructura de Servicios** (3.er año) de la carrera **Tecnicatura Universitaria en Administración de Redes y Servicios TIC**.
+
+- **Temas:** entornos de trabajo, disponibilidad, alta disponibilidad, clustering, escalabilidad, aprovisionamiento y continuidad de servicios.
+- **Virtualización:** conceptos, esquemas de implementación, Proxmox, gestión de máquinas virtuales y clústeres de virtualización.
+- **Contenedores:** Docker, imágenes, configuración, ciclo de vida, persistencia, volúmenes y Docker Compose.
+- **Automatización e infraestructura:** monitoreo, observabilidad, Terraform, Ansible, despliegue centralizado, scripting y gestión operativa.
+- **Orquestación:** clustering de contenedores, arquitectura y componentes de Kubernetes, despliegue de servicios y escalado.
+- **Autor del libro de la asignatura**, que abarca integralmente los contenidos del programa.
 
 ---
 
